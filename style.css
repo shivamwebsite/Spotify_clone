@@ -15,10 +15,18 @@ body {
 
 .left {
     width: 25vw;
+    position: relative;
+}
+.cross{
+    position: absolute;
+    right: 20px;
+    top: 8px;
+    display: none;
 }
 
 .right {
     width: 75vw;
+    position: relative;
 }
 
 .home ul li {
@@ -98,6 +106,9 @@ span {
     background-color: #0c0c0c;
     align-items: center;
     padding: 10px 20px;
+}
+.hamburger{
+    display: none;
 }
 
 .signupbtn {
@@ -180,4 +191,43 @@ span {
     background-color: rgb(120, 126, 120);
     padding: 12px;
     color: white;
+    position: fixed;
+    bottom: 10px;
+}
+@media (max-width:700px) {
+    .left{
+        /* background-color: red; */
+        position: absolute;
+        left: -350px;
+        z-index: 10;
+        width: 250px;
+        background-color: black;
+        transition: all ease-in-out 2s;
+    }
+    .right{
+        width: 100vw;
+    }
+    .playbar{
+        width: 90vw;
+    }
+    .hamburger{
+        display:inline;
+    }
+    .cross{
+        display: inline;
+    }
+}
+@media (max-width:400px) {
+.header{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.loginbtn{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.signupbtn{
+    padding-left: 20px;
+    padding-right: 20px;
+}
 }
