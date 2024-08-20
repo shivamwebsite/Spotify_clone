@@ -17,7 +17,8 @@ body {
     width: 25vw;
     position: relative;
 }
-.cross{
+
+.cross {
     position: absolute;
     right: 20px;
     top: 8px;
@@ -36,10 +37,12 @@ body {
     gap: 15px;
     padding: 10px 18px 10px 18px;
 }
-.library{
+
+.library {
     max-height: 75vh;
     overflow-y: scroll;
 }
+
 .library ul {
     display: flex;
     width: 100px;
@@ -62,7 +65,7 @@ body {
     padding: 10px 18px 25px 18px;
 }
 
-.cont{
+.cont {
     max-height: 200px;
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -96,7 +99,8 @@ span {
     margin: 7px;
     color: #b4afaf;
 }
-.c{
+
+.c {
     margin-top: 25px;
 }
 
@@ -107,7 +111,8 @@ span {
     align-items: center;
     padding: 10px 20px;
 }
-.hamburger{
+
+.hamburger {
     display: none;
 }
 
@@ -154,7 +159,7 @@ span {
     padding: 25px;
     display: flex;
     flex-wrap: wrap;
-    
+
 }
 
 .card {
@@ -172,7 +177,7 @@ span {
     object-fit: contain;
 }
 
-.play i{
+.play i {
     color: black;
     /* border-radius: 30px; */
     border-radius: 60%;
@@ -184,18 +189,20 @@ span {
     top: 135px;
     right: 20px;
 }
-.playbar{
+
+.playbar {
     display: flex;
     justify-content: center;
     width: 70vw;
     background-color: rgb(120, 126, 120);
     padding: 12px;
     color: white;
-    position: fixed;
+    position: absolute;
     bottom: 10px;
 }
+
 @media (max-width:700px) {
-    .left{
+    .left {
         /* background-color: red; */
         position: absolute;
         left: -350px;
@@ -204,30 +211,38 @@ span {
         background-color: black;
         transition: all ease-in-out 2s;
     }
-    .right{
+
+    .right {
         width: 100vw;
     }
-    .playbar{
+
+    .playbar {
         width: 90vw;
+        position: fixed;
     }
-    .hamburger{
-        display:inline;
+
+    .hamburger {
+        display: inline;
     }
-    .cross{
+
+    .cross {
         display: inline;
     }
 }
+
 @media (max-width:400px) {
-.header{
-    padding-left: 0px;
-    padding-right: 0px;
-}
-.loginbtn{
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.signupbtn{
-    padding-left: 20px;
-    padding-right: 20px;
-}
+    .header {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .loginbtn {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .signupbtn {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
