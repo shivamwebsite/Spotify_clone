@@ -57,7 +57,7 @@ async function main() {
 
     // play
     // var audio = new Audio(songs[0]);
-    playMusic(songs[0],true);
+    playMusic(songs[1],true);
     // audio.play();
 
     play.addEventListener("click" , ()=>{
