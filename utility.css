@@ -8,6 +8,9 @@
 .justify{
     justify-content: center;
 }
+.justifyspace{
+    justify-content: space-between;
+}
 .alignitem{
     align-items: center;
 }

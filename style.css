@@ -195,13 +195,41 @@ span {
     display: flex;
     justify-content: center;
     width: 70vw;
-    background-color: rgb(120, 126, 120);
+    height: 35px;
+    background-color: rgb(48, 48, 48);
     padding: 12px;
     color: white;
     position: absolute;
     bottom: 10px;
+    border-radius: 15px;
 }
 
+.seekbaar{
+    height: 2px;
+    width: 98%;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+    margin: 6px;
+}
+.circle{
+    height: 13px;
+    width: 13px;
+    border-radius:13px;
+    background-color: white;
+    position: relative;
+    bottom: 6px;
+    left: 0%;
+    transition: left 0.5s;
+}
+.abovebaar{
+    display: flex;
+    /* gap:50px; */
+    width: 100%;
+    justify-content: space-between;
+}
 @media (max-width:700px) {
     .left {
         /* background-color: red; */
