@@ -27,7 +27,7 @@ function secondsToMinutesSeconds(seconds) {
 async function  getsongs() {
     let a=await fetch("http://127.0.0.1:5500/songs/")
     let response = await a.text();
-    // console.log(response);
+    console.log(response);
     let div = document.createElement("div")
     div.innerHTML = response;
     let as = div.getElementsByTagName("a")
@@ -77,5 +77,21 @@ async function main() {
         ${secondsToMinutesSeconds(currentsong.currentTime)}/${secondsToMinutesSeconds(currentsong.duration)}`
         document.querySelector(".circle").style.left=(currentsong.currentTime/currentsong.duration)*100+"%";
     })
+
+        // Add an event listener to seekbar
+        document.querySelector(".seekbaar").addEventListener("click", e => {
+            let percent = (e.offsetX / e.target.getBoundingClientRect().width) * 100;
+            document.querySelector(".circle").style.left = percent + "%";
+            currentsong.currentTime = ((currentsong.duration) * percent) / 100
+        })
 }
 main();
+let button=document.querySelector(".change")
+button.addEventListener('click',()=>{
+    console.log("clicked change");
+    let bg=prompt("backgroungcolor");
+    let col=prompt("color");
+    document.querySelector(".body").style.backgroundColor=`${bg}`;
+    document.querySelector(".body").style.color=`${col}`;
+    document.querySelector(".body").style.fontWeight="bold";
+})
