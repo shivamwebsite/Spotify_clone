@@ -91,7 +91,11 @@ button.addEventListener('click',()=>{
     console.log("clicked change");
     let bg=prompt("backgroungcolor");
     let col=prompt("color");
-    document.querySelector(".body").style.backgroundColor=`${bg}`;
-    document.querySelector(".body").style.color=`${col}`;
+    document.querySelectorAll(".body").forEach(e=>{
+        e.style.backgroundColor=`${bg}`;})
+    document.querySelectorAll(".body").forEach(e=>{
+        e.style.color=`${col}`;})
+    document.querySelectorAll(".bodycl").forEach(e=>{
+            e.style.color=`${col}`;})
     document.querySelector(".body").style.fontWeight="bold";
 })

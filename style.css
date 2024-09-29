@@ -195,7 +195,7 @@ span {
     display: flex;
     justify-content: center;
     width: 70vw;
-    height: 35px;
+    min-height: 35px;
     background-color: rgb(48, 48, 48);
     padding: 12px;
     color: white;
@@ -269,12 +269,15 @@ span {
         padding-left: 20px;
         padding-right: 20px;
     }
-
+    .playbar{
+        margin-bottom: 50px;
+    }
     .signupbtn {
         padding-left: 20px;
         padding-right: 20px;
     }
     .cardcontainer {
         justify-content: center;
+        padding-bottom: 100px;
     }
 }
